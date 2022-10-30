@@ -3,11 +3,16 @@
   margin-bottom: 30px;
 }
 
+.header__wraper {
+  max-width: 1815px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
 .header__inner { 
   width: 100%;
-  padding: 0 15px;
   display: flex;
-  justify-content: space-between;
   align-items: center;
 }
 
@@ -21,9 +26,9 @@
   margin-right: 61px; 
   border-bottom: 2px dashed var(--red);
   background-color: transparent;
-  font-family: Montserrat, sans-serif;
+  font-size: 0.87rem;
   font-weight: 700;
-  line-height: 17.07px;
+  line-height: 1.21;
   text-transform: uppercase;
   color: var(--red);
   cursor: pointer;
@@ -52,11 +57,10 @@
 .header__social {
   margin-right: 50px;
 }
+
 .header__phone {
-  text-decoration: none;
   margin-right: 70px;
-  font-size: 1.14rem;
-  font-weight: 400;
+  font-size: 1rem;
   color: var(--blue);
   cursor: pointer;
 }
@@ -70,8 +74,16 @@
 }
 
 @media(max-width: 768px){
-
  .header__contacts {
   display: none;
+ }
+
+ .header__logo {
+  flex-grow: 1;
+ }
+
+ .header__burger {
+  margin-right: 0px;
+  margin-left: 25px;
  }
 }

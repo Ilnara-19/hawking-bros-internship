@@ -1,0 +1,27 @@
+.breadcrumb__line {
+  height: 1px;
+  background-color: var(--light-grey);
+  color: var(--light-grey);
+  border: none;
+}
+
+.breadcrumb_list {
+  padding: 14px 0;
+}
+
+.breadcrumb__item {
+  margin-right: 7px;
+  font-size: 0.75rem;
+  line-height: 1.25;
+  color: var(--middle-grey);
+}
+
+.breadcrumb__item--active {
+  margin-left: 7px;
+  color: var(--blue);
+}
+
+.breadcrumb__icon {
+  width: 8px;
+  height: 8px;
+}

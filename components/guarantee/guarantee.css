@@ -1,0 +1,47 @@
+.guarantee {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.guarantee__icon {
+  width: 79px;
+  height: 79px;
+  margin-bottom: 30px;
+}
+
+.guarantee__item {
+  display: flex;
+  flex-direction: column;
+}
+
+.guarantee__title {
+  margin-bottom: 10px;
+  font-size: 1.25rem;
+  font-weight: 700;
+  line-height: 30px;
+  color: var(--black);
+}
+
+.guarantee__text {
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 30px;
+  color: var(--black);
+}
+
+@media(max-width: 768px){
+ .guarantee__title {
+  font-size: 1.12rem;
+ }
+
+ .guarantee__text {
+  font-size: 0.87rem;
+  line-height: 1.85;
+ }
+
+ .guarantee__icon {
+  margin-bottom: 26px;
+ }
+}

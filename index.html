@@ -12,70 +12,81 @@
   <link rel="stylesheet" href="./components/section/section.css">
   <link rel="stylesheet" href="./components/nav/nav.css">
   <link rel="stylesheet" href="./components/social/social.css">
+  <link rel="stylesheet" href="./components/burger/burger.css">
+  <link rel="stylesheet" href="./components/basket/basket.css">
+  <link rel="stylesheet" href="./components/footer/footer.css">;
+  <link rel="stylesheet" href="./components/breadcrumb/breadcrumb.css">
+  <link rel="stylesheet" href="./components/benefits/benefits.css">
+  <link rel="stylesheet" href="./components/main/main.css">
+  <link rel="stylesheet" href="./components/guarantee/guarantee.css">
 </head>
 
 <body>
   <header class="header">
-    <div class="header__inner">
-      <img src="./assets/img/Logo.png" alt="logo" class="header__logo">
-      <div class="burger header__burger">
-        <svg class="burger__icon">
-          <use xlink:href="./assets/svg/sprite.svg#burger"></use>
-        </svg>
-        <div class="burger__inner">
-          <nav class="sidebar">
-            <a href="#" class="sidebar__link">Каталог товаров</a>
-            <a href="#" class="sidebar__link">Доставка и оплата</a>
-            <a href="#" class="sidebar__link">Цены</a>
-            <a href="#" class="sidebar__link">Контакты</a>
-          </nav>
+    <div class="header__wraper">
+      <div class="header__inner">
+        <div class="header__logo">
+          <img src="./assets/img/Logo.png" alt="logo">
         </div>
-      </div>
-      <nav class="nav header__nav">
-        <a href="#" class="nav__link">Каталог товаров</a>
-        <a href="#" class="nav__link">Доставка и оплата</a>
-        <a href="#" class="nav__link">Цены</a>
-        <a href="#" class="nav__link">Контакты</a>
-      </nav>
-      <div class="header__contacts">
-        <a href="#" class="header__phone">+7 (812) <b class="header__phone--black">509 21 98</b></a>
-        <button class="header__call">Перезвоните мне</button>
-      </div>
-      <div class="social header__social">
-        <a class="social__link" href="#">
-          <svg class="social__icon">
-            <use xlink:href="./assets/svg/sprite.svg#vk"></use>
+        <div class="burger header__burger">
+          <svg class="burger__icon">
+            <use xlink:href="./assets/svg/sprite.svg#burger"></use>
+          </svg>
+          <div class="burger__inner">
+            <nav class="sidebar">
+              <a href="#" class="sidebar__link">Каталог товаров</a>
+              <a href="#" class="sidebar__link">Доставка и оплата</a>
+              <a href="#" class="sidebar__link">Цены</a>
+              <a href="#" class="sidebar__link">Контакты</a>
+            </nav>
+          </div>
+        </div>
+        <nav class="nav header__nav">
+          <a href="#" class="nav__link">Каталог товаров</a>
+          <a href="#" class="nav__link">Доставка и оплата</a>
+          <a href="#" class="nav__link">Цены</a>
+          <a href="#" class="nav__link">Контакты</a>
+        </nav>
+        <div class="header__contacts">
+          <a href="#" class="header__phone">+7 (812) <b class="header__phone--black">509 21 98</b></a>
+          <button class="header__call">Перезвоните мне</button>
+        </div>
+        <div class="social header__social">
+          <a class="social__link" href="#">
+            <svg class="social__icon">
+              <use xlink:href="./assets/svg/sprite.svg#vk"></use>
+            </svg>
+          </a>
+          <a class="social__link" href="#">
+            <svg class="social__icon">
+              <use xlink:href="./assets/svg/sprite.svg#telegram"></use>
+            </svg>
+          </a>
+          <a class="social__link" href="#">
+            <svg class="social__icon">
+              <use xlink:href="./assets/svg/sprite.svg#instagram"></use>
+            </svg>
+          </a>
+          <a class="social__link" href="#">
+            <svg class="social__icon">
+              <use xlink:href="./assets/svg/sprite.svg#wa"></use>
+            </svg>
+          </a>
+        </div>
+        <div class="header__actions">
+          <svg class="header__search">
+            <use xlink:href="./assets/svg/sprite.svg#search"></use>
+          </svg>
+          <svg class="header__like">
+            <use xlink:href="./assets/svg/sprite.svg#like"></use>
+          </svg>
+        </div>
+        <a href="#">
+          <svg class="basket">
+            <use xlink:href="./assets/svg/sprite.svg#basket"></use>
           </svg>
         </a>
-        <a class="social__link" href="#">
-          <svg class="social__icon">
-            <use xlink:href="./assets/svg/sprite.svg#telegram"></use>
-          </svg>
-        </a>
-        <a class="social__link" href="#">
-          <svg class="social__icon">
-            <use xlink:href="./assets/svg/sprite.svg#instagram"></use>
-          </svg>
-        </a>
-        <a class="social__link" href="#">
-          <svg class="social__icon">
-            <use xlink:href="./assets/svg/sprite.svg#wa"></use>
-          </svg>
-        </a>
       </div>
-      <div class="header__actions">
-        <svg class="header__search">
-          <use xlink:href="./assets/svg/sprite.svg#search"></use>
-        </svg>
-        <svg class="header__like">
-          <use xlink:href="./assets/svg/sprite.svg#like"></use>
-        </svg>
-      </div>
-      <a href="#">
-        <svg class="basket">
-          <use xlink:href="./assets/svg/sprite.svg#basket"></use>
-        </svg>
-      </a>
     </div>
   </header>
 
@@ -262,14 +273,16 @@
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa adipisci iusto accusamus consequatur corporis inventore commodi? Autem illum fuga accusamus natus, architecto numquam neque sit nesciunt voluptates, aperiam odit ipsa?
         </p>
         <div class="section__video">
-          <img src="/assets/img/BlobLeft.png" alt="BlobLeft">
-          <svg class="section__left-dots section__left-dots--position">
-            <use xlink:href="./assets/svg/sprite.svg#dots"></use>
-          </svg>
-          <img src="/assets/img/BlobRight.png" alt="BlobRight">
-          <svg class="section__right-dots section__right-dots--position">
-            <use xlink:href="./assets/svg/sprite.svg#dots"></use>
-          </svg>
+          <div class="section__picture">
+            <img src="/assets/img/BlobLeft.png" alt="BlobLeft">
+            <svg class="section__left-dots section__left-dots--position">
+              <use xlink:href="./assets/svg/sprite.svg#dots"></use>
+            </svg>
+            <img src="/assets/img/BlobRight.png" alt="BlobRight">
+            <svg class="section__right-dots section__right-dots--position">
+              <use xlink:href="./assets/svg/sprite.svg#dots"></use>
+            </svg>
+          </div>
           <iframe class="section__iframe" src="https://www.youtube.com/embed/Dl4UXwEGtSw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
         </div>
       </section>
@@ -277,7 +290,7 @@
       <hr class="section__line">
 
       <section class="section main__section">
-        <h2 class="section__suptitle">Фото выполненных работ</h2>
+        <h2 class="section__title">Фото выполненных работ</h2>
         <p class="section__paragraph">
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit deleniti unde in. Neque aliquam enim officia esse quos, accusantium delectus facilis commodi officiis, necessitatibus quo asperiores reiciendis atque, veritatis expedita!
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa adipisci iusto accusamus consequatur corporis inventore commodi? Autem illum fuga accusamus natus, architecto numquam neque sit nesciunt voluptates, aperiam odit ipsa?

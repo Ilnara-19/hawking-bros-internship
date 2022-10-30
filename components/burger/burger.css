@@ -1,0 +1,13 @@
+.burger__icon {
+  width: 56px;
+  height: 56px;
+}
+
+@media(max-width: 768px){
+ .burger {
+  display: flex;
+  justify-items: flex-end;
+  align-items: center;
+  order: 3;
+ }
+}

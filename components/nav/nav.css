@@ -1,14 +1,13 @@
 .nav {
   display: flex;
+  flex-grow: 1;
   justify-content: space-between;
-  align-items: center;
-  min-width: 665px; 
 }
 
 .nav__link {
   font-weight: 700;
-  font-size: 1.14rem;
-  line-height: 23px;
+  font-size: 1rem;
+  line-height: 1.43;
   text-transform: uppercase;
   color: var(--blue);
   cursor: pointer;

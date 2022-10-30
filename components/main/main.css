@@ -1,0 +1,9 @@
+.main__section {
+  margin-bottom: 114px;
+}
+
+@media(max-width: 768px){
+ .main__section {
+  margin-bottom: 56px;
+ } 
+}
