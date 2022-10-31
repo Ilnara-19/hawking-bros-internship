@@ -1,1 +1,3 @@
-# internship-website-chimney
+# internship
+
+Задание - получение GIT профиля с помощью fetch API; получение данных пользователей с fake api с использованием axios
