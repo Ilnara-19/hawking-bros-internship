@@ -15,7 +15,7 @@
         case isNaN(inputState.value):
           throw new Error('value is not a number');
         default:
-          alert('No value');
+          alert('ОК');
       }
     } catch (error) {
       errorMessage.classList.add('error');
