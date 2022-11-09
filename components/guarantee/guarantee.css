@@ -14,6 +14,12 @@
 .guarantee__item {
   display: flex;
   flex-direction: column;
+  flex-grow: 1;
+  margin-bottom: 27px;
+}
+
+.guarantee__item:last-child {
+  margin-bottom: 0px;
 }
 
 .guarantee__title {
@@ -32,13 +38,22 @@
 }
 
 @media(max-width: 768px){
+  .guarantee:last-child {
+    justify-content: center;
+  }
+
+  .guarantee__item{
+    align-items: center;
+  }
+
  .guarantee__title {
-  font-size: 1.12rem;
+  font-size: 1.125rem;
  }
 
  .guarantee__text {
-  font-size: 0.87rem;
+  font-size: 0.875rem;
   line-height: 1.85;
+  text-align: center;
  }
 
  .guarantee__icon {

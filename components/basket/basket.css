@@ -1,4 +1,4 @@
-.basket {
-  width: 58px;
+.basket__icon {
+  width: clamp(44px, 10vw, 58px);
   height: 56px;
 }

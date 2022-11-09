@@ -7,14 +7,14 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
   <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="./components/social/social.css">
   <link rel="stylesheet" href="./components/gallery/gallery.css">
   <link rel="stylesheet" href="./components/header/header.css">
   <link rel="stylesheet" href="./components/section/section.css">
   <link rel="stylesheet" href="./components/nav/nav.css">
-  <link rel="stylesheet" href="./components/social/social.css">
   <link rel="stylesheet" href="./components/burger/burger.css">
   <link rel="stylesheet" href="./components/basket/basket.css">
-  <link rel="stylesheet" href="./components/footer/footer.css">;
+  <link rel="stylesheet" href="./components/footer/footer.css">
   <link rel="stylesheet" href="./components/breadcrumb/breadcrumb.css">
   <link rel="stylesheet" href="./components/benefits/benefits.css">
   <link rel="stylesheet" href="./components/main/main.css">
@@ -81,11 +81,12 @@
             <use xlink:href="./assets/svg/sprite.svg#like"></use>
           </svg>
         </div>
-        <a href="#">
-          <svg class="basket">
+        <div class="basket">
+          <svg class="basket__icon">
             <use xlink:href="./assets/svg/sprite.svg#basket"></use>
           </svg>
-        </a>
+          <div class="basket__inner"></div>
+        </div>
       </div>
     </div>
   </header>
@@ -258,7 +259,7 @@
               <!-- <p class="input__error">Please fill in birthday</p>
               <p class="input__error" data-birthday> Please enter the age from 18</p> -->
             </div>
-            <button class="btn" type="submit">отправить</button>
+            <button class="btn" type="submit">оставить заявку</button>
           </div>
 
         </form>
@@ -327,32 +328,32 @@
   <footer class="footer">
     <div class="container">
       <div class="footer__main">
-        <div class="footer__catalog">
+        <div class="footer__item">
           <div class="footer__title">Каталог</div>
           <nav class="footer__list">
-            <a class="footer__item" href="#">Дымооход</a>
-            <a class="footer__item" href="#">Дымососы</a>
-            <a class="footer__item" href="#">Печи для дома</a>
-            <a class="footer__item" href="#">Печи для бани</a>
-            <a class="footer__item" href="#">Камины</a>
-            <a class="footer__item" href="#">Силикат кальция</a>
-            <a class="footer__item" href="#">Котлы</a>
-            <a class="footer__item" href="#">Еще</a>
+            <a class="footer__link" href="#">Дымоход</a>
+            <a class="footer__link" href="#">Дымососы</a>
+            <a class="footer__link" href="#">Печи для дома</a>
+            <a class="footer__link" href="#">Печи для бани</a>
+            <a class="footer__link" href="#">Камины</a>
+            <a class="footer__link" href="#">Силикат кальция</a>
+            <a class="footer__link" href="#">Котлы</a>
+            <a class="footer__link" href="#">Еще</a>
           </nav>
         </div>
-        <div class="footer__information">
+        <div class="footer__item">
           <div class="footer__title">Информация</div>
           <nav class="footer__list">
-            <a class="footer__item" href="#">Каталог</a>
-            <a class="footer__item" href="#">Установка и монтаж</a>
-            <a class="footer__item" href="#">Отзывы</a>
-            <a class="footer__item" href="#">Ликвидация товара</a>
-            <a class="footer__item" href="#">Полезное</a>
-            <a class="footer__item" href="#">Контакты</a>
-            <a class="footer__item" href="#">Оплата и доставка</a>
+            <a class="footer__link" href="#">Каталог</a>
+            <a class="footer__link" href="#">Установка и монтаж</a>
+            <a class="footer__link" href="#">Отзывы</a>
+            <a class="footer__link" href="#">Ликвидация товара</a>
+            <a class="footer__link" href="#">Полезное</a>
+            <a class="footer__link" href="#">Контакты</a>
+            <a class="footer__link" href="#">Оплата и доставка</a>
           </nav>
         </div>
-        <div class="footer__contact">
+        <div class="footer__item">
           <div class="footer__title">Время работы</div>
           <div class="footer__work-time">
             <svg class="footer__watch">
@@ -361,7 +362,7 @@
             <span class="footer__time"><b class="blue">пн-пт</b> 9:00 - 20:00</span>
             <span class="footer__time"><b class="blue">сб-вс</b> 10:00 - 18:00</span>
           </div>
-          <div class="footer__loctation">
+          <div class="footer__location">
             <svg class="footer__location-icon">
               <use xlink:href="./assets/svg/sprite.svg#location"></use>
             </svg>

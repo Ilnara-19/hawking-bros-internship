@@ -25,10 +25,17 @@
 
 .section__list {
   display: grid;
-  grid-template-rows: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 100px);
   grid-auto-flow: column;
-  gap: 28px;
+  gap: 15px;
   align-items: center;
+}
+
+.section__social {
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 200px;
+  margin-bottom: 40px;
 }
 
 .section__item {
@@ -55,7 +62,7 @@
   line-height: 0.8;
   color: var(--black);
   text-align: center;
-  white-space: nowrap;
+  text-transform: uppercase;
 }
 
 .section__paragraph--position {
@@ -67,12 +74,6 @@
   text-align: center;
 }
 
-.section__social {
-  display: flex;
-  justify-content: center;
-  margin-bottom: 40px;
-}
-
 .section__video {
   width: 100%;
   position: relative;
@@ -80,11 +81,13 @@
 
 .section__iframe {
   width: 734px;
-  height: 400px;
+  /* width: calc(var(--index) * 30); */
+  /* width: 100px; */
+  height: 400px; 
   position: absolute;
   top: 10%;
   right: 25%;
-  z-index: 50;
+  z-index: 50; 
 }
 
 .section__subtitle {
@@ -191,22 +194,24 @@
  }
 
  .section__item {
-  font-size: 0.85rem;
+  font-size: 0.875rem;
  }
 
  .section__digit {
-  font-size: 3.12rem;
+  font-size: 3.125rem;
  }
 
  .section__title {
   margin-bottom: 37px;
+  font-size: 1.875rem;
  }
 
  .section__title--position {
   margin-bottom: 5px;
   font-size: 2.5rem;
-  line-height: 0.75;
- }
+  line-height: 0.75; 
+  white-space: nowrap; 
+}
 
  .section__paragraph--position {
   font-size: 1rem;
@@ -217,6 +222,48 @@
  }
 
  .section__iframe {
+  width: 100%;
   position: static;
  }
+
+.section__breadcrumb {
+  margin-bottom: 80px;
+ }
+}
+
+@media(max-width: 320px){
+  .section__main-title {
+    font-size: 1.875rem;
+    margin-bottom: 11px;
+  }
+  .section__title {
+    font-size: 1.25rem;
+    line-height: 1.875;
+  }
+  .section__title--position {
+    font-size: 1.375rem;
+    line-height: 1.363;
+    white-space: normal;
+  }
+
+  .section__list {
+    grid-auto-flow: row;
+  }
+
+  .section__iframe {
+    height: 50%;
+    position: static;
+  }
+
+  .section__breadcrumb {
+    margin-bottom: 16px;
+  }
+
+  .section__paragraph {
+    flex: 0.875rem;
+  }
+
+  .section__list {
+    gap: 0px;
+  }
 }
