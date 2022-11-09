@@ -1,1 +1,1 @@
-# internship-website-chimney
+Задание - работа с localStorage
